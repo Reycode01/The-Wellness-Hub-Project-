@@ -1,0 +1,119 @@
+{
+     "products": [
+       {
+         "id": 1,
+         "title": "Lifting Fitness",
+         "price": 1500,
+         "stock": 100,
+         "description": "Peform some lifting to improve your body muscle and shapes, good to have biceps!"
+       },
+       {
+         "id": 2,
+         "title": "Pull-Up-and-Down",
+         "price": 1000,
+         "stock": 350,
+         "description": "Do some sit ups and cut your belly while at home, very comfortable stuff!"
+       },
+       {
+         "id": 3,
+         "title": "Hand Fitness",
+         "price": 1300,
+         "stock": 5,
+         "description": "Good for your hands. Use the dumbbells to exercise your hands and tone some fats! Great muscles ahead!"
+       },
+       {
+         "id": 4,
+         "title": "Roller Stretcher",
+         "price": 1700,
+         "stock": 1,
+         "description": "Rollers! How about we roll front and back, we tone some fat and strengthen our back! Try out!"
+       },
+       {
+         "id": 5,
+         "title": "Foot Pedals",
+         "price": 1200,
+         "stock": 1,
+         "description": "Pull and push. If you're tired of push-ups, how about you get this. The results are like magic!"
+       },
+       {
+         "id": 6,
+         "title": "Grunner Runner",
+         "price": 1400,
+         "stock": 2,
+         "description": "You're tired of traffic? No safe place for morning runs? Fixed schedule? How about you run comfortably at home. Buy while stocks last"
+       },
+       {
+         "id": 7,
+         "title": "Back Exercise",
+         "price": 1700,
+         "stock": 3,
+         "description": "How about you ride a bicycle in your own house and tone your thighs and leg muscle. Fun and health fitness product"
+       },
+       {
+         "id": 8,
+         "title": "Bicycle Riding",
+         "price": 2500,
+         "stock": 50,
+         "description": "Some good skin care after the sweat. You need to refresh your skin too as you refresh your body"
+       },
+       {
+         "id": 9,
+         "title": "Visha Skin Care",
+         "price": 7500,
+         "stock": 20,
+         "description": "Been hit by the dry sun while exercising. Come and moisturize your skin to look young and glow!"
+       },
+       {
+         "id": 10,
+         "title": "CeraVe Lotion",
+         "price": 4500,
+         "stock": 4,
+         "description": "No, age is not a number! We need to work on our skin as we age gracefully. We will build your keratin back"
+       },
+       {
+         "id": 11,
+         "title": "Keratin Treatment",
+         "price": 2500,
+         "stock": 7,
+         "description": "Tired of maintaining a healthy cooking routine. Our supplements will maintain your fitness despite having junk"
+       },
+       {
+         "id": 12,
+         "title": "Keratin Supplements",
+         "price": 100,
+         "stock": 5,
+         "description": "Don't worry about your skin issues. Our skin care products are here, just like your doctor! Buy the collection and enjoy the results"
+       },
+       {
+         "id": 13,
+         "title": "Tonor Skin Care",
+         "price": 300,
+         "stock": 13,
+         "description": "Yes! new in the market and promising results. Dermatologists proven"
+       },
+       {
+         "id": 14,
+         "title": "Keratin Oil Massage",
+         "price": 4500,
+         "stock": 9,
+         "description": "Amazing skin care product. Try and not regret"
+       },
+       {
+         "id": 15,
+         "title": "Natural Herbal",
+         "price": 7500,
+         "stock": 5,
+         "description": "As you exercise, don't forget your skin. Enjoy wholeness results"
+       },
+       {
+         "id": 16,
+         "title": "Facial Cream",
+         "price": 4500,
+         "stock": 10,
+         "description": "Some good skin care after the sweat. You need to refresh your skin too as you refresh your body"
+       }
+     ]
+   }
+   
+   
+   

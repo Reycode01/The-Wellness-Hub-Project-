@@ -13,6 +13,11 @@ header {
     font-family: "Great Vibes", cursive;
     font-size: 36px;
 }
+Style the payment button */
+.payment-button {
+    position: absolute;
+    right: 40px; /* Adjust this value to move the button to the desired position */
+}
 
 .additional-text {
     font-family: 'Times New Roman', Times, serif;
@@ -182,6 +187,13 @@ footer {
     font-size: 16px;
     background-color: #95e995c0;
     color: black;
+}
+.stock {
+font-family: 'Arial', sans-serif; /* Choose your preferred font */
+font-size: 16px; /* Adjust the font size as needed */
+font-weight: bold; /* Use bold font weight for emphasis */
+color: #ff6600; /* Custom color using hexadecimal code */
+margin-top: 10px;
 }
   
 

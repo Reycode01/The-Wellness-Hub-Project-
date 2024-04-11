@@ -16,6 +16,7 @@
         <div class="auth-buttons">
             <button id="signup-btn">Sign UP</button>
             <button id="login-btn">Login</button>
+            
         </div>
     </header>
     <div class="search-bar">
@@ -25,6 +26,7 @@
     <div class="cart-buttons-container">
         <button class="cart-button">View Cart</button>
         <button class="cart-button"><i class="fas fa-plus"></i>Add to Cart</button>
+        <button id="payment-btn">Pay Now</button>
     </div>
     <div class="product-grid">
         <div class="image-container">
@@ -32,193 +34,304 @@
                 Lifting Fitness
             <div class="price-container">
                 <button class="price-button">$1500</button>
+                <div class="stock" style="margin-left:20px;">Stock: 100</div>
                 <button class="like-button" onclick="incrementLikes(this)">
                     ♥ <span class="like-count">0</span>
                 </button>
-                <button class="like-button">♥</button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">Peform some lifting to improve your body muscle and shapes, good to have biceps!</p>
-            <button class="comment-button">Comment</button>
         </div>
         <div class="image-container">
                 <img src="https://fitsy.in/uploads/products/564/07f123ddae3d4931b533e791a3288d5f.jpg" alt="Sit up workout" class="image-details" data-details="details-name">
                 Pull-Up-and-Down 
                 <div class="price-container">
                 <button class="price-button">$1000</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 350</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">Do some sit ups and cut your belly while at home, very comfortable stuff!</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://cdn.shopify.com/s/files/1/0272/5901/1165/products/RubberHexDumbbellV23kg_1024x1024.jpg?v=1637353313" alt="Nike home workout" class="image-details" data-details="details-name">
                 Hand Fitness
                 <div class="price-container">
                 <button class="price-button">$1300</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 5</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">Good for your hands. Use the dumbles to exercise your hands and tone some fats! Great muscles ahead!</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://www.afrofit.co.ke/cdn/shop/products/70ed6eec6dae325f8cb5fba5852927f309e5d18f_600x600.jpg?v=1623742913" alt="Roller wheel exercise" class="image-details" data-details="details-name">
                 Roller Stretcher
                 <div class="price-container">
                 <button class="price-button">$1700</button>
-                <button class="like-button">♥</button> 
+                <div class="stock" style="margin-left:20px;">Stock: 1</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul> 
             </div>
             <div class="description"></div>
             <p class="image-description">Rollers! How about we role front and back, we tone some fat and strenthn our back! Try out!</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/3187821/1.jpg?6093" alt="footpedal" class="image-details" data-details="details-name">
                 Foot Pedals
                 <div class="price-container">
                 <button class="price-button">$1200</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 1</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
-            <p class="image-description"> Pull and push. If you tired of push-up, how about you get this. The results are like magic!</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
+            <p class="image-description"> Pull and push. If you tired of push-up, how about you get this. The results are like magic!</p>     
         </div>
         <div class="image-container">
                 <img src="https://i0.wp.com/fitnesskenya.co.ke/wp-content/uploads/2022/02/GRunner-Home-Gym-Motorized-Treadmill_nairobi-fitness_0796263609.jpg?resize=427%2C427&ssl=1" alt="Grunner" class="image-details" data-details="details-name">
                 Grunner Runner
                 <div class="price-container">
                 <button class="price-button">$1400</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 2</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">You tired of traffic? No safety place for morning runs? fixed shedule ? How about you run comnfortably at home. Buy while stocks lasts</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://www.fitnessgym.co.ke/images/gallery/00cfg01k.jpg" alt="Dumbell flat" class="image-details" data-details="details-name">
                 Back Exercise
                 <div class="price-container">
                 <button class="price-button">$1700</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 3</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description"> How about you ride byecle in your own house amd tone your thighs and leg muscle. Fun and health fitness product</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://assets.roguefitness.com/f_auto,q_auto,c_fill,g_center,w_616,h_616,b_rgb:f8f8f8/catalog/Conditioning/Endurance%20/Bikes/ECHOBIKE/ECHOBIKE-TH_ih5rzy.png" alt="roguefitness" class="image-details" data-details="details-name">
                 Byecle Riding
                 <div class="price-container">
                 <button class="price-button">$2500</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 50</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">Some good skin care after the sweat. You need to refresh your skin too as you refresh your body</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://www.vishaskincare.com/cdn/shop/products/69491231_1111677412358688_7737693182166564864_o_1024x1024.jpg?v=1567043202" alt="fitness skin care" class="image-details" data-details="details-name">
                 Visha Skin Care
                 <div class="price-container">
                 <button class="price-button">$7500</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 20</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">Been hit by the dry sun while exercising. Come and moisturize your skin to look young and glow!</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://media.cnn.com/api/v1/images/stellar/prod/220519085500-workout-skincare-cerave.jpg?c=original" alt="skin care" class="image-details" data-details="details-name">
                 CeraVe Lotion 
                 <div class="price-container">
                 <button class="price-button">$4500</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 4</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">No, age is not a number! We need to work on our skin as we age gracefully. We will build your keratine back</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://en.samfitnesstr.com/Cdn/keratin.jpeg" alt="keratin" class="image-details" data-details="details-name">
                 Keratin Treatment
                 <div class="price-container">
                 <button class="price-button">$2500</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 7</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
         </div>
             <div class="description"></div>
             <p class="image-description">TIred of maintaining healthy cooking routine. Our supplimetss will maintain your fitness despite having junk</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/vitamin-supplement/k/m/t/60-ok-fitness-green-tea-60-tablets-for-weight-management-special-original-imagjr77taz5mazv.jpeg?q=90&crop=false" alt="dietary suppliment" class="image-details" data-details="details-name">
                 Keratin Suppliments
                 <div class="price-container">
                 <button class="price-button">$100</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 5</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description"> Dont worry about your skin issues. Our skin care products are here, just like your doctor! Buy the collection and enjoy the results</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://conferwith.net/cdn/shop/products/SkinFitnessSystem_360x.jpg?v=1618568170" alt="skin fitness" class="image-details" data-details="details-name">
                 Tonor Skin Care
                 <div class="price-container">
                 <button class="price-button">$300</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 13</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">Yes! new in the market and promising results. Dermatologists proven</p>
-            <button class="comment-button">Comment</button>
-            <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://en.samfitnesstr.com/Cdn/WhatsApp_Image_2021-04-23_at_17.03.25.jpeg" alt="Keratin care" class="image-details" data-details="details-name">
                 Keratin Oil Massage
                 <div class="price-container">
                 <button class="price-button">$4500</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 9</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description">Amazing skin care product. Try and not regret</p>
-            <button class="comment-button">Comment</button>
-                <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                 <img src="https://www.cliniquelafontaine.com/cdn/shop/products/Serum-dermo-fitness.jpg?v=1622667434" alt="fitness serum" class="serum image" data-details="data-details">
                 Natural Harbal 
                 <div class="price-container">
                 <button class="price-button">$7500</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 5</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div>
             <div class="description"></div>
             <p class="image-description"> As you exercise, dont forget your skin. Enjoy wholeness results</p>
-                <button class="comment-button">Comment</button>
-                <button class="post-button">Post</button>
         </div>
         <div class="image-container">
                     <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1643021641-13324147-6424896743413104.jpg?crop=0.800xw:1xh;center,top&resize=980:*" alt="skin fitness" class="image-details" data-details="details-name">
+                    Facial Cream
                 <div class="price-container">
                 <button class="price-button">$4500</button>
-                <button class="like-button">♥</button>
+                <div class="stock" style="margin-left:20px;">Stock: 10</div>
+                <button class="like-button" onclick="incrementLikes(this)">
+                    ♥ <span class="like-count">0</span>
+                </button>
+                <button class="comment-button" onclick="toggleCommentForm(this)">Comment</button>
+                <form class="comment-form" style="display: none;">
+                    <textarea class="comment-input" placeholder="Write a comment"></textarea>
+                    <button class="post-button" onclick="postComment(this)">Post</button>
+                </form>
+                <ul class="comments-list"></ul>
             </div> 
             <div class="description"></div>
             <p class="image-description"> Happy skin care, great confidence</p>
-                    <button class="comment-button">Comment</button>
-                    <button class="post-button">Post</button>
         </div>
         </div>
     </div>
