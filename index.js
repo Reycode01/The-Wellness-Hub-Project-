@@ -1,26 +1,3 @@
-// Fetch products and render them
-fetch('https://end-of-phase-one-3.onrender.com/products')
-.then(response => {
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    return response.json();
-})
-.then(data => {
-    if (Array.isArray(data)) {
-        products = data;
-        renderProducts(products);
-    } else if (typeof data === 'object' && data.hasOwnProperty('id')) {
-        products = [data];
-        renderProducts(products);
-    } else {
-        console.error('Unexpected data structure:', data);
-    }
-})
-.catch(error => {
-    console.error('Error fetching products:', error);
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     // Function to increment likes
         function incrementLikes(button) {
@@ -364,4 +341,25 @@ commentsSection.insertBefore(newComment, commentInput);
      alert('Sorry!! We submitting this before Deadline. Upgrades coming up!!.');
     }
  }
-   
+// Fetch products and render them
+fetch('https://end-of-phase-one-3.onrender.com/products')
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();
+})
+.then(data => {
+    if (Array.isArray(data)) {
+        products = data;
+        renderProducts(products);
+    } else if (typeof data === 'object' && data.hasOwnProperty('id')) {
+        products = [data];
+        renderProducts(products);
+    } else {
+        console.error('Unexpected data structure:', data);
+    }
+})
+.catch(error => {
+    console.error('Error fetching products:', error);
+});
