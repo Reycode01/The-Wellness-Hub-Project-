@@ -173,10 +173,11 @@ footer {
 }
 .like-button.liked {
     color: red; /* Color when liked */
+}
 .description {
     text-align: center;
 }
-}
+
 
 .comment-button,
 .post-button {
@@ -195,7 +196,25 @@ font-weight: bold; /* Use bold font weight for emphasis */
 color: #ff6600; /* Custom color using hexadecimal code */
 margin-top: 10px;
 }
-  
+/* CSS to enlarge the feedback form */
+#feedback-form {
+    width: 100%; /* Set the form width to 100% of its container */
+    max-width: 400px; /* Set a maximum width to limit the form width */
+}
+
+#feedback-input {
+    width: calc(100% - 80px); /* Set the input field width to 80% of the form width */
+    padding: 10px; /* Add padding to the input field for better appearance */
+    margin-bottom: 10px; /* Add some bottom margin to create space between input and button */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#feedback-form button {
+    width: 80px; /* Set the button width */
+    height: 40px; /* Set the button height */
+    padding: 10px; /* Add padding to the button for better appearance */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
 
 
 
